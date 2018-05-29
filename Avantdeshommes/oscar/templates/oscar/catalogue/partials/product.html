@@ -1,0 +1,60 @@
+{% load reviews_tags %}
+{% load thumbnail %}
+{% load i18n %}
+{% load display_tags %}
+{% load staticfiles %}
+{% load product_tags %}
+
+{% load currency_filters %}
+{% load purchase_info_tags %}
+
+{% purchase_info_for_product request product as session %}
+
+{% block product %}
+    <article class="product_pod">
+        {% block product_image %}
+            <div class="image_container">
+                {% with image=product.primary_image %}
+                    {% thumbnail image.original "x155" upscale=False as thumb %}
+                    <a href="{{ product.get_absolute_url }}"><img id="" src="{{ thumb.url }}" alt="{{ product.get_title }}" class="image"></a>
+                    {% endthumbnail %}
+                {% endwith %}
+                <div class="middle">
+                    <div class="sang">
+                        {% if session.price.exists %}
+                            {% if session.price.excl_tax == 0 %}
+                                <p class="price_color">{% trans "Free" %}</p>
+                            {% elif session.price.is_tax_known %}
+                                <p class="price_color">{{ session.price.incl_tax|currency:session.price.currency }}</p>
+                            {% else %}
+                                <p class="price_color">{{ session.price.excl_tax|currency:session.price.currency }}</p>
+                            {% endif %}
+                        {% else %}
+                            <p class="price_color">&nbsp;</p>
+                        {% endif %}
+                        <p>Size: {{ product.upc }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endblock %}
+
+
+<!--
+        {% block product_title %}
+        <div class="producttitle">
+            <h2><a href="{{ product.get_absolute_url }}" title="{{ product.get_title }}">{{ product.get_title|truncatewords:4 }}</a></h2>
+        </div>
+        {% endblock %}
+
+        {% block product_price %}
+
+            <div class="product_price">
+                
+                {% if not product.is_parent and not product.has_options %}
+                    {% include "catalogue/partials/add_to_basket_form_compact.html" %}
+                {% endif %}
+            </div>
+        {% endblock %}
+-->        
+    </article>
+{% endblock %}

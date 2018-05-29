@@ -1,0 +1,147 @@
+{% extends "layout_2_col.html" %}
+{% load staticfiles %}
+
+{% load i18n %}
+
+{% load basket_tags %}
+{% load category_tags %}
+{% load product_tags %}
+
+{% load reviews_tags %}
+{% load thumbnail %}
+
+{% load display_tags %}
+
+{% load history_tags %}
+
+
+{% block navigation %}
+    {% include "partials/nav_primary.html" with expand_dropdown=1 %}  
+           
+
+{% endblock %}
+
+
+
+{% block header %}
+ {% include "partials/navbar2.html" %}
+
+{% endblock %}
+
+{% block column_left %}
+{% endblock %}
+
+{% block content %}
+
+<div id="s"> 
+	<div class="">
+	
+	</div>
+</div>
+
+<div id="s1">
+	<div class="s1">
+		<h1>DAMIR DOMA</h1>
+	{% if products %}
+        <section>
+            <div>
+                <ol class="row">
+                    {% for product in products %}
+                    {% if 'Damir Doma' in product.title %}
+                        <li class="col-xs-6 col-sm-4 col-md-3 col-lg-3">{% render_product product %}</li>
+                        {% endif %}
+                    {% endfor %}
+                </ol>
+                {% include "partials/pagination.html" %}
+            </div>
+        </section>
+    {% else %}
+        <p class="nonefound">{% trans "No products found." %}</p>
+    {% endif %}
+    
+	</div>
+</div>
+
+	
+
+
+<div id="s2">
+		<div class="s1">
+			<h1>Ma+</h1>
+	{% if products %}
+        <section>
+            <div>
+                <ol class="row">
+                    {% for product in products %}
+                    {% if 'Ma+' in product.title %}
+                        <li class="col-xs-6 col-sm-4 col-md-3 col-lg-3">{% render_product product %}</li>
+                        {% endif %}
+                    {% endfor %}
+                </ol>
+                {% include "partials/pagination.html" %}
+            </div>
+        </section>
+    {% else %}
+        <p class="nonefound">{% trans "No products found." %}</p>
+    {% endif %}
+	</div>
+</div>
+	<div id="s3">
+		<div class="s1">
+			<h1>Dries van Noten</h1>
+			{% if products %}
+        <section>
+            <div>
+                <ol class="row">
+                    {% for product in products %}
+                    {% if 'Dries Van Noten' in product.title %}
+                        <li class="col-xs-6 col-sm-4 col-md-3 col-lg-3">{% render_product product %}</li>
+                        {% endif %}
+                    {% endfor %}
+                </ol>
+                {% include "partials/pagination.html" %}
+            </div>
+        </section>
+    {% else %}
+        <p class="nonefound">{% trans "No products found." %}</p>
+    {% endif %}
+		</div>
+	</div>
+	<div id="s4">
+		<div class="s1">
+			<h1>Kolor</h1>
+		</div>
+	</div>
+	<div id="s5">
+		<div class="s1">
+			<h1>Label Under Construction</h1>
+		</div>
+	</div>
+	<div id="s6">
+		<div class="s1">
+			<h1>Rick Owens</h1>
+		</div>
+	</div>
+
+
+
+
+<script>
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
+
+
+</script>
+
+
+
+{% endblock content %}
+
+{% block footer2 %}
+
+{% endblock %}
