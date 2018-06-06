@@ -4233,100 +4233,100 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-right: 0;
   }
 }
-.navbar-default {
+.oberster-balken {
   background-color:; 
   border-color: ;
 }
-.navbar-default .navbar-brand {
+.oberster-balken .navbar-brand {
   color: #777;
 }
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
+.oberster-balken .navbar-brand:hover,
+.oberster-balken .navbar-brand:focus {
   color: #5e5e5e;
   background-color: transparent;
 }
-.navbar-default .navbar-text {
+.oberster-balken .navbar-text {
   color: #777;
 }
-.navbar-default .navbar-nav > li > a {
-  color: #777;
+.oberster-balken .navbar-nav > li > a {
+  color: white;
 }
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
+.oberster-balken .navbar-nav > li > a:hover,
+.oberster-balken .navbar-nav > li > a:focus {
   color: #333;
   background-color: transparent;
 }
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+.oberster-balken .navbar-nav > .active > a,
+.oberster-balken .navbar-nav > .active > a:hover,
+.oberster-balken .navbar-nav > .active > a:focus {
   color: #555;
   background-color: #e7e7e7;
 }
-.navbar-default .navbar-nav > .disabled > a,
-.navbar-default .navbar-nav > .disabled > a:hover,
-.navbar-default .navbar-nav > .disabled > a:focus {
+.oberster-balken .navbar-nav > .disabled > a,
+.oberster-balken .navbar-nav > .disabled > a:hover,
+.oberster-balken .navbar-nav > .disabled > a:focus {
   color: #ccc;
   background-color: transparent;
 }
-.navbar-default .navbar-toggle {
+.oberster-balken .navbar-toggle {
   border-color: #ddd;
 }
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
+.oberster-balken .navbar-toggle:hover,
+.oberster-balken .navbar-toggle:focus {
   background-color: #ddd;
 }
-.navbar-default .navbar-toggle .icon-bar {
+.oberster-balken .navbar-toggle .icon-bar {
   background-color: #888;
 }
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
+.oberster-balken .navbar-collapse,
+.oberster-balken .navbar-form {
   border-color: #e7e7e7;
 }
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
+.oberster-balken .navbar-nav > .open > a,
+.oberster-balken .navbar-nav > .open > a:hover,
+.oberster-balken .navbar-nav > .open > a:focus {
   background-color: #e7e7e7;
   color: #555;
 }
 @media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  .oberster-balken .navbar-nav .open .dropdown-menu > li > a {
     color: #777;
   }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+  .oberster-balken .navbar-nav .open .dropdown-menu > li > a:hover,
+  .oberster-balken .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #333;
     background-color: transparent;
   }
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  .oberster-balken .navbar-nav .open .dropdown-menu > .active > a,
+  .oberster-balken .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .oberster-balken .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #555;
     background-color: #e7e7e7;
   }
-  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
-  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+  .oberster-balken .navbar-nav .open .dropdown-menu > .disabled > a,
+  .oberster-balken .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .oberster-balken .navbar-nav .open .dropdown-menu > .disabled > a:focus {
     color: #ccc;
     background-color: transparent;
   }
 }
-.navbar-default .navbar-link {
+.oberster-balken .navbar-link {
   color: #777;
 }
-.navbar-default .navbar-link:hover {
+.oberster-balken .navbar-link:hover {
   color: #333;
 }
-.navbar-default .btn-link {
+.oberster-balken .btn-link {
   color: #777;
 }
-.navbar-default .btn-link:hover,
-.navbar-default .btn-link:focus {
+.oberster-balken .btn-link:hover,
+.oberster-balken .btn-link:focus {
   color: #333;
 }
-.navbar-default .btn-link[disabled]:hover,
-fieldset[disabled] .navbar-default .btn-link:hover,
-.navbar-default .btn-link[disabled]:focus,
-fieldset[disabled] .navbar-default .btn-link:focus {
+.oberster-balken .btn-link[disabled]:hover,
+fieldset[disabled] .oberster-balken .btn-link:hover,
+.oberster-balken .btn-link[disabled]:focus,
+fieldset[disabled] .oberster-balken .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
