@@ -32,7 +32,7 @@ p {
 }
 
 
-.image_container:hover .image{
+.image_holder:hover .image{
   opacity: 0.3;
     -ms-transform: scale(1.5); /* IE 9 */
     -webkit-transform: scale(1.5); /* Safari 3-8 */
@@ -40,7 +40,7 @@ p {
 
 }
 
-.image_container:hover .middle {
+.image_holder:hover .middle {
   opacity: 1;
 }
 .middle {
@@ -8960,13 +8960,13 @@ form.flat {
 .basket-mini-item li:first-child {
   border-top: none;
 }
-.basket-mini-item .image_container {
+.basket-mini-item .image_holder {
   min-height: 70px;
 }
-.basket-mini-item .image_container img {
+.basket-mini-item .image_holder img {
   max-height: 70px;
 }
-.basket-mini-item .image_container a {
+.basket-mini-item .image_holder a {
   padding: 0;
 }
 .basket-mini-item a {
@@ -9058,7 +9058,7 @@ ul.row {
   min-height: 0;
   white-space: nowrap;
 }
-.product_pod .image_container,
+.product_pod .image_holder,
 .product_pod .availability,
 .product_pod .price_color {
   margin-bottom: 0;
@@ -9068,7 +9068,7 @@ ul.row {
   bottom: 0;
   width: 100%;
 }
-.image_container {
+.image_holder {
   width: 100%;
   min-height: 165px;
   overflow: hidden;
@@ -9076,7 +9076,7 @@ ul.row {
   position: relative;
   padding: 3em;
 }
-.image_container img {
+.image_holder img {
   max-height: 100%;
   max-width: 100%;
 
@@ -9255,11 +9255,11 @@ a:hover .thumbnail {
 .star-rating.Five i {
   color: #E6CE31;
 }
-.promotion_single .image_container {
+.promotion_single .image_holder {
   min-height: 210px;
   margin-bottom: 20px;
 }
-.promotion_single .image_container img {
+.promotion_single .image_holder img {
   max-height: 200px;
 }
 .sidebar .promotion_single h2 {
