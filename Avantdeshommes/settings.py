@@ -43,6 +43,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+OSCAR_SHOP_NAME = 'AVANTDESHOMMES'
+OSCAR_SHOP_TAGLINE = 'AVANTDESHOMMES'
 
 OSCAR_PROMOTION_POSITIONS = (('featured', 'Featured'),
                              ('home', 'Home Products'))
@@ -225,5 +227,5 @@ STATIC_URL = '/static/'
 # if DEBUG:
 MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "media")
+MEDIA_ROOT = location("media")
 STATICFILES_DIRS = [os.path.join(ROOT_PATH, 'static')]
